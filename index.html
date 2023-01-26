@@ -1,0 +1,44 @@
+<title>WEATHER PORTAL</title>
+<meta http-equiv="refresh" content="10">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="icon" href="data:,">
+<style>
+  html {font-family: Arial; display: inline-block; text-align: center;background-color: black;}
+  p {  font-size: 1.0rem;}
+  body {  margin: 0;}
+  .topnav { overflow: hidden; background-color: #563546; color: white; font-size: 1.5rem; }
+  .content { padding: 50px; }
+  .card { background-color: white; box-shadow: 2px 2px 12px 1px rgba(140,140,140,.5); }
+  .cards { max-width: 400px; margin: 0 auto; display: grid; grid-gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+  .reading { font-size: 2.8rem; }
+  .card.temperature { color: #0e7c7b;width: 550px; text-align: center;height: 360px;margin-right: 200px; }
+</style>
+</head>
+<body>
+<div class="topnav">
+  <h3>IoT Mini Weather Station</h3>
+</div>
+<div class="content">
+  <div class="cards">
+    <div class="card temperature">
+      <h4></i>TEMPERATURE</h4><iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2012673/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+    </div>
+    <div class="card temperature">
+      <h4></i>PRESSURE</h4><iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2012673/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+    </div>
+    <div class="card temperature">
+        <h4></i>HUMIDITY</h4><iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2012673/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+      </div>
+      <div class="card temperature">
+        <h4></i>LIGHT</h4><iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2012673/charts/5?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+      </div>
+      <div class="card temperature">
+        <h4></i>RAINFALL</h4><iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2012673/charts/4?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+      </div>
+      </div>
+  </div>
+</div>
+</body>
+
+</html>
